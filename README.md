@@ -2,6 +2,18 @@
 
 A backend web service that identifies and tracks customers across multiple purchases made with different contact information. Built for the Bitespeed backend task.
 
+## 🌐 Live Endpoint
+
+**Base URL:** [https://identity-reconcilation-yfwn.onrender.com](https://identity-reconcilation-yfwn.onrender.com)
+
+**Identify API:** `POST https://identity-reconcilation-yfwn.onrender.com/identify`
+
+```bash
+curl -X POST https://identity-reconcilation-yfwn.onrender.com/identify \
+  -H "Content-Type: application/json" \
+  -d '{"email": "lorraine@hillvalley.edu", "phoneNumber": "123456"}'
+```
+
 ## Tech Stack
 
 - **Runtime**: Node.js with TypeScript
