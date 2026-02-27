@@ -110,21 +110,21 @@ Identifies a customer by email and/or phone number and returns their consolidate
 
 ### 1. New customer
 ```bash
-curl -X POST http://localhost:3000/identify \
+curl -X POST https://identity-reconcilation-yfwn.onrender.com/identify \
   -H "Content-Type: application/json" \
   -d '{"email": "lorraine@hillvalley.edu", "phoneNumber": "123456"}'
 ```
 
 ### 2. Returning customer with new email
 ```bash
-curl -X POST http://localhost:3000/identify \
+curl -X POST https://identity-reconcilation-yfwn.onrender.com/identify \
   -H "Content-Type: application/json" \
   -d '{"email": "mcfly@hillvalley.edu", "phoneNumber": "123456"}'
 ```
 
 ### 3. Lookup by phone only
 ```bash
-curl -X POST http://localhost:3000/identify \
+curl -X POST https://identity-reconcilation-yfwn.onrender.com/identify \
   -H "Content-Type: application/json" \
   -d '{"phoneNumber": "123456"}'
 ```
